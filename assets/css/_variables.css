@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --white: #fff;
+    --black: #000;
+    --primary-color: #EDE6DA;
+    --secondary-color: #0A4740;
+    --header-message: #D9D0C2;
+    --primary-text: #2A2A2A;
+    --secondary-text: #4A4A4A;
+    --input-text: #737373;
+
+    /* Gap */
+    --section-gap: 24px;
+}

@@ -11,4 +11,8 @@
 
     /* Gap */
     --section-gap: 24px;
+
+    /* Fonts */
+    --primary-font: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    --secondary-font: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }

@@ -10,6 +10,7 @@
     --input-text: #737373;
 
     /* Gap */
+    --gap-small: 20px;
     --section-gap: 24px;
 
     /* Fonts */

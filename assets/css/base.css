@@ -1,7 +1,21 @@
+header {
+    flex-direction: column;
+    width: 100vw;
+    z-index: 50;
+}
+
 li {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.flex {
+    display: flex;
 }

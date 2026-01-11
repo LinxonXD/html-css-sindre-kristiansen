@@ -11,12 +11,26 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="flex">
         <div class="header__content">
-            <div class="header__inner">
-                <div class="left">
+            <div class="header__inner flex">
+                <div class="center flex">
+                    <a href="#" aria-label="RainyDays">
+                        <img src="./assets/images/logo.png" alt="" aria-hidden="true">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Outlet</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="left flex">
                     <div class="search">
-                        <form action="/search" method="GET" role="search">
+                        <form action="/search" method="GET" role="search" class="flex">
                             <label for="search" class="label__hidden">Search for products and categories</label>
                             <input type="search" name="q" id="search" placeholder="Search for products and categories" required>
                             <button type="submit"><img src="./assets/images/search_icon.png" alt="" aria-hidden="true"></button>
@@ -32,40 +46,26 @@
                         <img src="./assets/images/search_icon.png" alt="" aria-hidden="true">
                     </a>
                 </div>
-                <div class="center">
-                    <a href="#">
-                        <img src="./assets/images/logo.png" alt="">
-                    </a>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Outlet</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="right">
+                <div class="right flex">
                     <a href="#" aria-label="Shopping Cart">
                         <img src="./assets/images/cart_icon.png" alt="" aria-hidden="true">
                     </a>
                     <input type="checkbox" id="hamburger-checkbox" />
-                    <label for="hamburger-checkbox" class="hamburger">
+                    <label for="hamburger-checkbox" class="hamburger" tabindex="0">
                         <img src="./assets/images/hamburger_icon.png" alt="" aria-hidden="true">
                     </label>
                     <nav class="hamburger-menu">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">Products</a>
-                        <a href="contact.html">News</a>
-                        <a href="">Outlet</a>
-                        <a href="">About us</a>
+                        <a href="#">Home</a>
+                        <a href="#">Products</a>
+                        <a href="#">News</a>
+                        <a href="#">Outlet</a>
+                        <a href="#">About us</a>
                     </nav>
                 </div>
             </div>
         </div>
         <div class="alert">
-            <div class="content">
+            <div class="content flex">
                 <p>Fast shipping</p>
                 <p>Buy now, pay later</p>
                 <p>Free shipping on orders over 999,-</p>

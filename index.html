@@ -73,10 +73,22 @@
         </div>
     </header>
     <main>
-
+        <h1>Hei</h1>
     </main>
     <footer>
-        
+        <div class="newsletter layout">
+            <div class="newsletter__content flex">
+                <h2>Join our newsletter</h2>
+                <p>Subscribe to get news, drops, release dates, discount codes, and more delivered straight to your inbox.</p>
+                <div class="newsletter__form flex">
+                    <form action="/subscribe" method="POST" class="flex">
+                        <label for="email" class="label__hidden">Enter email address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email address" autocomplete="email" required>
+                        <button class="flex" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

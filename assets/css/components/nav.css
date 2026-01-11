@@ -189,11 +189,6 @@
         cursor: pointer;
     }
 
-    .label__hidden {
-        position: absolute;
-        clip: rect(0, 0, 0, 0);
-    }
-
     .mobile,
     .hamburger,
     #hamburger-checkbox:checked ~ .hamburger-menu {

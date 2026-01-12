@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -15,10 +16,10 @@
         <div class="header__content">
             <div class="header__inner flex">
                 <div class="center flex">
-                    <a href="#" aria-label="RainyDays">
-                        <img src="./assets/images/logo.png" alt="" aria-hidden="true">
+                    <a href="./">
+                        <img src="./assets/images/logo.png" alt="RainyDays">
                     </a>
-                    <nav>
+                    <nav aria-label="Main menu">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Products</a></li>
@@ -50,11 +51,11 @@
                     <a href="#" aria-label="Shopping Cart">
                         <img src="./assets/images/cart_icon.png" alt="" aria-hidden="true">
                     </a>
-                    <input type="checkbox" id="hamburger-checkbox" />
+                    <input type="checkbox" id="hamburger-checkbox" aria-label="Open menu">
                     <label for="hamburger-checkbox" class="hamburger" tabindex="0">
                         <img src="./assets/images/hamburger_icon.png" alt="" aria-hidden="true">
                     </label>
-                    <nav class="hamburger-menu">
+                    <nav class="hamburger-menu" aria-label="Mobile menu">
                         <a href="#">Home</a>
                         <a href="#">Products</a>
                         <a href="#">News</a>
@@ -86,6 +87,53 @@
                         <input type="email" name="email" id="email" placeholder="Enter email address" autocomplete="email" required>
                         <button class="flex" type="submit">Subscribe</button>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="navigation layout grid">
+            <div class="navigation__item flex">
+                <img src="./assets/images/logo.png" alt="RainyDays">
+                <p><i class="fa-solid fa-location-dot"></i>Address 1, 4867 Oslo</p>
+                <p><i class="fa-solid fa-envelope"></i>contact@rainydays.com</p>
+                <p><i class="fa-solid fa-phone"></i>+47 123 45 678</p>
+                <p>Org.nr: 123 456 789</p>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Information</h2>
+                <a href="#">Help center</a>
+                <a href="#">Shipping</a>
+                <a href="#">Contact</a>
+                <a href="#">About us</a>
+                <a href="#">Career</a>
+                <a href="#">My account</a>
+                <a href="#">Order tracking</a>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Guidelines</h2>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Cookie policy</a>
+                <a href="#">Gift card terms</a>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Follow us</h2>
+                <a href="#">Newsletter</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">X / Twitter</a>
+            </div>
+            <div class="navigation__secondary flex">
+                <div class="copyright">
+                    <p>RainyDays &copy; Copyright 2026</p>
+                </div>
+                <div class="payment flex">
+                    <img src="./assets/svg/mastercard.svg" alt="Mastercard">
+                    <img src="./assets/svg/visa.svg" alt="Visa">
+                    <img src="./assets/svg/amex.svg" alt="American Express">
+                    <img src="./assets/svg/paypal.svg" alt="PayPal">
+                    <img src="./assets/svg/applepay.svg" alt="Apple Pay">
                 </div>
             </div>
         </div>

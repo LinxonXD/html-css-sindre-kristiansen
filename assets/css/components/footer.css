@@ -115,6 +115,8 @@
 
 .navigation__item a {
     text-transform: capitalize;
+    display: inline-block;
+    width: fit-content;
 }
 
 .navigation__item p {

@@ -112,6 +112,11 @@
 }
 
 @media (min-width: 991px) {
+    .products,
+    .products__list {
+        padding: 0;
+    }
+
     .products h2 {
         font-size: 1.5rem;
     }

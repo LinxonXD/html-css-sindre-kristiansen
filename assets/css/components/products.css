@@ -1,0 +1,143 @@
+.products,
+.products__list {
+    padding: 0 16px;
+}
+
+.products {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.products h2 {
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-text);
+}
+
+.products__list {
+    grid-template-columns: 1fr;
+    gap: 33px;
+}
+
+.product {
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+}
+
+.product__discount {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 7px;
+    right: 0px;
+    border-radius: 2px;
+}
+
+.product__info {
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+.product__info h4 {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-text);
+    margin-bottom: 17px;
+}
+
+.product__brand {
+    justify-content: space-between;
+}
+
+.product__brand h3 {
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.product__rating,
+.product__pricing {
+    gap: 6px;
+}
+
+.product__rating {
+    flex-direction: row;
+}
+
+.product__rating img {
+    max-height: 15px;
+    width: 90px;
+}
+
+.product__rating p {
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.product__pricing p {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.product__pricing span {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-text);
+    text-decoration-line: line-through;
+}
+
+.outlet {
+    margin-top: 52px;
+}
+
+@media (min-width: 991px) {
+    .products h2 {
+        font-size: 1.5rem;
+    }
+
+    .products a {
+        font-family: var(--secondary-font);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+    }
+
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .product__discount {
+        font-size: 1rem;
+    }
+
+    .product__rating p {
+        font-size: 0.875rem;
+    }
+
+    .outlet {
+        margin-top: 59px;
+    }
+}

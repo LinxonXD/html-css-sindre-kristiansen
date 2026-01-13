@@ -72,7 +72,6 @@
     .info__content {
         grid-template-columns: repeat(2, 1fr);
         gap: 98px;
-        padding: 0;
     }
 
     .info__accordions {

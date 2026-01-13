@@ -126,6 +126,7 @@
     .center {
         display: flex;
         align-items: center;
+        gap: 56px;
         flex: 0 1 905px;
         min-width: 687px;
     }

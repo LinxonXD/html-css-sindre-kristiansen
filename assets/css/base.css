@@ -6,6 +6,8 @@ header {
     flex-direction: column;
     width: 100%;
     z-index: 50;
+    position: fixed;
+    top: 0;
 }
 
 footer {

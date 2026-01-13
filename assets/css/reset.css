@@ -9,4 +9,11 @@
 body {
   box-sizing: border-box;
   background-color: var(--white);
+  margin-top: 140px;
+}
+
+@media (min-width: 991px) {
+  body {
+    margin-top: 150px;
+  }
 }

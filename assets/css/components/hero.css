@@ -1,4 +1,5 @@
-.hero {
+.hero,
+.hero__secondary {
     position: relative;
     display: flex;
     height: 52vh;
@@ -8,6 +9,10 @@
     background-position: center;
     align-items: center;
     padding: 0 16px;
+}
+
+.hero__secondary {
+    background-image: url("../../images/hero_2.jpg")
 }
 
 .hero__content {
@@ -29,7 +34,8 @@
 }
 
 @media (min-width: 991px) {
-    .hero {
+    .hero,
+    .hero__secondary {
         padding: 0 48px;
     }
 

@@ -55,14 +55,6 @@
     height: auto;
 }
 
-.top__stroke {
-    border-top: 1px solid var(--white);
-}
-
-.bottom__stroke {
-    border-bottom: 1px solid var(--white);
-}
-
 @media (min-width: 991px) {
     .info {
         padding: 140px 0;

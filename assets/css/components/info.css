@@ -1,5 +1,6 @@
 .info__accordions,
-.info__text {
+.info__text,
+.cart__accordions {
     flex-direction: column;
 }
 

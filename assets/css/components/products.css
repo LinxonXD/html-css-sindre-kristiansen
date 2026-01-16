@@ -160,14 +160,14 @@
 
 .information__main h1 {
     font-family: var(--secondary-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--secondary-text);
 }
 
 .information__main span {
     font-family: var(--primary-font);
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--primary-text);
 }
@@ -190,13 +190,13 @@
 
 .info__pricing p {
     font-family: var(--primary-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .info__pricing span {
     font-family: var(--primary-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     text-decoration-line: line-through;
 }
@@ -229,6 +229,11 @@ input[type=number] {
     border: 0.5px solid rgba(0, 0, 0, 0.20)
 }
 
+.info__description {
+    flex-direction: column;
+    gap: 31px;
+}
+
 .info__proceed {
     flex-direction: column;
     gap: 13px;
@@ -258,7 +263,7 @@ select[name=size] {
     width: 100%;
     max-width: 100%;
     font-family: var(--primary-font);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 500;
     background-image: url("./../../images/arrow_down.png");
     background-repeat: no-repeat;
@@ -267,7 +272,7 @@ select[name=size] {
 }
 
 .info__buttons {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 11px;
 }
 
@@ -314,5 +319,26 @@ select[name=size] {
     .product__information {
         grid-template-columns: repeat(2, 1fr);
         gap: 172px;
+    }
+
+    .info__buttons {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    select[name=size] {
+        font-size: 1.125rem;
+    }
+
+    .info__pricing p,
+    .info__pricing span {
+        font-size: 2rem;
+    }
+
+    .information__main h1 {
+        font-size: 2rem;
+    }
+
+    .information__main span {
+        font-size: 1.75rem;
     }
 }

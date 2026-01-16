@@ -67,6 +67,22 @@ input[type=search]::-webkit-search-cancel-button {
     display: none;
 }
 
+.top__stroke {
+    border-top: 1px solid var(--white);
+}
+
+.bottom__stroke {
+    border-bottom: 1px solid var(--white);
+}
+
+.top__stroke__secondary {
+    border-top: 1px solid var(--secondary-color);
+}
+
+.bottom__stroke__secondary {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
 .label__hidden {
     position: absolute;
     width: 1px;

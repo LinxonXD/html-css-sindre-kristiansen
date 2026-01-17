@@ -1,0 +1,110 @@
+.checkout__forms {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout__forms h1 {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-text);
+}
+
+.checkout__shipping {
+    flex-direction: column;
+    gap: 13px;
+}
+
+.checkout__shipping h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.shipping__forms {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    align-items: start;
+}
+
+.checkout__input {
+    flex-direction: column;
+}
+
+input[id=f__name],
+input[id=l__name],
+input[id=email],
+input[id=tel],
+input[id=address],
+input[id=postal],
+input[id=city],
+input[id=state],
+input[id=c__name],
+input[id=c__number],
+input[id=cvv],
+input[id=expiry] {
+    padding: 20px 10px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    outline-color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--input-text);
+}
+
+input[type=radio] {
+    order: 0;
+}
+
+label[for=debit] {
+    order: 1;
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--input-text);
+}
+
+.payment__option {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20)
+}
+
+.disabled__option {
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.payment__inputs {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.checkout__input__double {
+    gap: 10px;
+}
+
+.checkout__input__double input {
+    max-width: 100%;
+    width: 100%;
+}
+
+.option {
+    gap: 10px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20)
+}
+
+@media (min-width: 991px) {
+    .shipping__forms {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 43px;
+        row-gap: 13px;
+    }
+}

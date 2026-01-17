@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainyDays | Checkout</title>
+    <meta name="description" content="Complete your order through our secure checkout. Enjoy fast payments, encrypted transactions, and trusted payment methods for a safe and seamless shopping experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./../assets/css/styles.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="header__content">
+            <div class="header__inner flex">
+                <div class="center flex">
+                    <a href="./../">
+                        <img src="./../assets/images/logo.png" alt="RainyDays">
+                    </a>
+                    <nav aria-label="Main menu">
+                        <ul>
+                            <li><a href="./../">Home</a></li>
+                            <li><a href="./../products/">Products</a></li>
+                            <li><a href="./../construction/">News</a></li>
+                            <li><a href="./../products/">Outlet</a></li>
+                            <li><a href="./../construction/">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="left flex">
+                    <div class="search">
+                        <form action="/search" method="GET" role="search" class="flex">
+                            <label for="search" class="label__hidden">Search for products and categories</label>
+                            <input type="search" name="q" id="search" placeholder="Search for products and categories" required>
+                            <button type="submit" aria-label="Search"><img src="./../assets/images/search_icon.png" alt="" aria-hidden="true"></button>
+                        </form>
+                    </div>
+                    <a href="./../construction/" aria-label="Profile">
+                        <img src="./../assets/images/account_icon.png" alt="" aria-hidden="true">
+                    </a>
+                    <a href="./../construction/" aria-label="Wishlist" class="desktop">
+                        <img src="./../assets/images/wishlist_icon.png" alt="" aria-hidden="true">
+                    </a>
+                    <a href="./../construction/" aria-label="Search" class="mobile">
+                        <img src="./../assets/images/search_icon.png" alt="" aria-hidden="true">
+                    </a>
+                </div>
+                <div class="right flex">
+                    <a href="./../cart/" aria-label="Shopping Cart">
+                        <img src="./../assets/images/cart_icon.png" alt="" aria-hidden="true">
+                    </a>
+                    <input type="checkbox" id="hamburger-checkbox" aria-label="Open menu">
+                    <label for="hamburger-checkbox" class="hamburger" tabindex="0" aria-label="Open menu">
+                        <img src="./../assets/images/hamburger_icon.png" alt="" aria-hidden="true">
+                    </label>
+                    <nav class="hamburger-menu" aria-label="Mobile menu">
+                        <a href="./../">Home</a>
+                        <a href="./../products/">Products</a>
+                        <a href="./../construction/">News</a>
+                        <a href="./../products/">Outlet</a>
+                        <a href="./../construction/">About us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="alert">
+            <div class="content flex">
+                <p>Fast shipping</p>
+                <p>Buy now, pay later</p>
+                <p>Free shipping on orders over 999,-</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="layout width space">
+            <ul class="breadcrumbs flex padding">
+                <li><a href="./../">Home</a></li>
+                <li><span>Checkout</span></li>
+            </ul>
+        </div>
+        <section class="layout width space">
+                <form action="./../confirmation/" method="POST" class="cart grid">
+                    <div class="checkout__forms flex">
+                        <h1>Checkout</h1>
+                        <div class="checkout__shipping flex">
+                            <h2>Shipping address</h2>
+                            <div class="shipping__forms grid">
+                                <div class="checkout__input flex">
+                                    <label for="f__name" class="label__hidden">First Name</label>
+                                    <input type="text" name="f__name" id="f__name" autocomplete="given-name" placeholder="First Name" required> 
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="l__name" class="label__hidden">Last Name</label>
+                                    <input type="text" name="l__name" id="l__name" autocomplete="family-name" placeholder="Last Name" required> 
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="email" class="label__hidden">Email Address</label>
+                                    <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="tel" class="label__hidden">Phone Number</label>
+                                    <input type="tel" name="tel" id="tel" autocomplete="tel" placeholder="Phone Number" required>
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="address" class="label__hidden">Address</label>
+                                    <input type="text" name="address" id="address" autocomplete="street-address" placeholder="Address" required>
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="postal" class="label__hidden">Postal Code</label>
+                                    <input type="text" name="postal" id="postal" autocomplete="postal-code" placeholder="Postal Code" required>
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="city" class="label__hidden">Town / City</label>
+                                    <input type="text" name="city" id="city" autocomplete="address-level2" placeholder="Town / City" required>
+                                </div>
+                                <div class="checkout__input flex">
+                                    <label for="state" class="label__hidden">State</label>
+                                    <input type="text" name="state" id="state" autocomplete="address-level1" placeholder="State" required>
+                                </div>
+                            </div>
+                            <h2>Payment method</h2>
+                            <div class="shipping__forms grid">
+                                <div class="payment__option flex">
+                                    <div class="option flex">
+                                        <label for="debit">Debit or credit card</label>
+                                        <input type="radio" name="debit" id="debit" checked>
+                                    </div>
+                                    <div class="payment__inputs flex">
+                                        <div class="checkout__input flex">
+                                            <label for="c__name" class="label__hidden">Cardholder Name</label>
+                                            <input type="text" name="c__name" id="c__name" placeholder="Cardholder Name" required>
+                                        </div>
+                                        <div class="checkout__input flex">
+                                            <label for="c__number" class="label__hidden">Card Number</label>
+                                            <input type="text" name="c__number" id="c__number" placeholder="Card Number" required>
+                                        </div>
+                                        <div class="checkout__input__double flex">
+                                            <div class="checkout__input flex">
+                                                <label for="cvv" class="label__hidden">CVV</label>
+                                                <input type="text" name="cvv" id="cvv" placeholder="CVV" required>
+                                            </div>
+                                            <div class="checkout__input flex">
+                                                <label for="expiry" class="label__hidden">Expiry date</label>
+                                                <input type="text" name="expiry" id="expiry" placeholder="Expiry date" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="disabled__option flex">
+                                    <label for="paypal">PayPal</label>
+                                    <input type="radio" name="paypal" id="paypal" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__summary flex">
+                        <h2>Order summary</h2>
+                        <div class="summary__pricing flex">
+                            <div class="subtotal flex">
+                                <p>Subtotal</p>
+                                <span>1 259,-</span>
+                            </div>
+                            <div class="shipping flex">
+                                <p>Shipping</p>
+                                <span>FREE</span>
+                            </div>
+                        </div>
+                        <div class="cart__checkout flex">
+                            <div class="total flex">
+                                <p>Total</p>
+                                <span>1 259,-</span>
+                            </div>
+                            <a href="./../confirmation/" class="primary__button flex">Place order</a>
+                        </div>
+                    </div>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter layout">
+            <div class="newsletter__content flex">
+                <h2>Join our newsletter</h2>
+                <p>Subscribe to get news, drops, release dates, discount codes, and more delivered straight to your inbox.</p>
+                <div class="newsletter__form flex">
+                    <form action="/subscribe" method="POST" class="flex">
+                        <label for="email" class="label__hidden">Enter email address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email address" autocomplete="email" required>
+                        <button class="flex" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="navigation layout grid">
+            <div class="navigation__item flex">
+                <img src="./../assets/images/logo.png" alt="RainyDays">
+                <p><i class="fa-solid fa-location-dot"></i>Address 1, 4867 Oslo</p>
+                <p><i class="fa-solid fa-envelope"></i>contact@rainydays.com</p>
+                <p><i class="fa-solid fa-phone"></i>+47 123 45 678</p>
+                <p>Org.nr: 123 456 789</p>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Information</h2>
+                <a href="./../construction/">Help center</a>
+                <a href="./../construction/">Shipping</a>
+                <a href="./../construction/">Contact</a>
+                <a href="./../construction/">About us</a>
+                <a href="./../construction/">Career</a>
+                <a href="./../construction/">My account</a>
+                <a href="./../construction/">Order tracking</a>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Guidelines</h2>
+                <a href="./../construction/">Terms & conditions</a>
+                <a href="./../construction/">Privacy policy</a>
+                <a href="./../construction/">Cookie policy</a>
+                <a href="./../construction/">Gift card terms</a>
+            </div>
+            <div class="navigation__item flex">
+                <h2>Follow us</h2>
+                <a href="./../construction/" target="_blank">Newsletter</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://tiktok.com" target="blank">TikTok</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://x.com" target="_blank">X / Twitter</a>
+            </div>
+            <div class="navigation__secondary flex">
+                <div class="copyright">
+                    <p>RainyDays &copy; Copyright 2026</p>
+                </div>
+                <div class="payment flex">
+                    <img src="./../assets/svg/mastercard.svg" alt="Mastercard">
+                    <img src="./../assets/svg/visa.svg" alt="Visa">
+                    <img src="./../assets/svg/amex.svg" alt="American Express">
+                    <img src="./../assets/svg/paypal.svg" alt="PayPal">
+                    <img src="./../assets/svg/applepay.svg" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

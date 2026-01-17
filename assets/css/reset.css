@@ -9,7 +9,7 @@
 body {
   box-sizing: border-box;
   background-color: var(--white);
-  margin-top: 140px;
+  margin-top: 160px;
 }
 
 @media (min-width: 991px) {

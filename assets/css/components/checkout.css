@@ -58,7 +58,8 @@ input[type=radio] {
     order: 0;
 }
 
-label[for=debit] {
+label[for=debit],
+label[for=paypal] {
     order: 1;
     font-family: var(--secondary-font);
     font-size: 1.125rem;
@@ -83,7 +84,7 @@ label[for=debit] {
 .payment__inputs {
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .checkout__input__double {

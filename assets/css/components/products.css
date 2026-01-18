@@ -87,7 +87,7 @@
     margin-top: 17px;
 }
 
-.product__info h4 {
+.product__info h3 {
     font-family: var(--secondary-font);
     font-size: 1rem;
     font-weight: 400;

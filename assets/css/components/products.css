@@ -339,6 +339,6 @@ select[name=size] {
     }
 
     .information__main span {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 }

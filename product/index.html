@@ -102,7 +102,8 @@
                         <h2>Quantity:</h2>
                         <div class="quantity__buttons flex">
                             <button class="quantity__btn">-</button>
-                            <input type="number" id="quantity" value="1" min="0" max="25">
+                            <label for="quantity" class="label__hidden">Quantity:</label>
+                            <input type="number" name="quantity" id="quantity" value="1" min="0" max="25">
                             <button class="quantity__btn">+</button>
                         </div>
                     </div>
@@ -113,7 +114,7 @@
                                     <h2>Choose size:</h2>
                                     <a href="./../construction/">Size guide</a>
                                 </div>
-                                <label for="size"></label>
+                                <label for="size" class="label__hidden">Choose size:</label>
                                 <select name="size" id="size">
                                     <option value selected disabled>Choose size</option>
                                     <option value="XS">XS</option>

@@ -1,3 +1,14 @@
+.product,
+.product__info,
+.information__content,
+.information__main,
+.info__quantity,
+.info__description,
+.info__proceed,
+.info__size {
+    flex-direction: column;
+}
+
 .products,
 .products__list,
 .product__information {
@@ -49,7 +60,6 @@
 
 .product {
     position: relative;
-    flex-direction: column;
     gap: 5px;
     flex-shrink: 0;
 }
@@ -74,7 +84,6 @@
 }
 
 .product__info {
-    flex-direction: column;
     margin-top: 17px;
 }
 
@@ -149,12 +158,10 @@
 }
 
 .information__content {
-    flex-direction: column;
     gap: 42px;
 }
 
 .information__main {
-    flex-direction: column;
     gap: 5px;
 }
 
@@ -202,7 +209,6 @@
 }
 
 .info__quantity {
-    flex-direction: column;
     gap: 4px;
 }
 
@@ -230,17 +236,14 @@ input[type=number] {
 }
 
 .info__description {
-    flex-direction: column;
     gap: 31px;
 }
 
 .info__proceed {
-    flex-direction: column;
     gap: 13px;
 }
 
 .info__size {
-    flex-direction: column;
     gap: 1px;
 }
 

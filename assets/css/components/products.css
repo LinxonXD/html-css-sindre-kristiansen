@@ -87,7 +87,7 @@
     margin-top: 17px;
 }
 
-.product__info h3 {
+.product__info h4 {
     font-family: var(--secondary-font);
     font-size: 1rem;
     font-weight: 400;
@@ -99,7 +99,7 @@
     justify-content: space-between;
 }
 
-.product__brand h2 {
+.product__brand h3 {
     font-family: var(--primary-font);
     font-size: 0.875rem;
     font-weight: 700;

@@ -66,7 +66,6 @@ Suggestions and bug reports are welcome. If you notice an issue, please include 
 
 ## Author
 Sindre Kristiansen
-Front-End development student at Noroff, based in Norway.
 
 - [Contact me](mailto:sindre@skdesign.no)
 
